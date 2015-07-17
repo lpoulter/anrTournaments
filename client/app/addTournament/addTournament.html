@@ -1,0 +1,27 @@
+<form class="form-horizontal" role="form" ng-submit="addTrny()" novalidate>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="name">Tournament Name:</label>
+    <div class="col-sm-3">
+      <input type="name" class="form-control" id="name" placeholder="Enter tournament name" ng-model="trny.name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="type">Select type:</label>
+      <div class="col-sm-3">
+        <select class="form-control" id="type" ng-model="trny.type">
+        <option>Casual</option>
+        <option>GNK</option>
+        <option>Store Champs</option>
+        <option>ANRPC</option>
+        <option>Regionals</option>
+        <option>Nationals</option>
+        <option>Worlds</option>
+      </select>
+      </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
